@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  {{>navbar}}
+
+  <div class="form">
+                       
+            <form action="/register" method="POST">
+ <!-- the url in action is /register route, where we rendered our register file!-->
+
+                <div class="field-wrap">
+                    <label>
+                        First Name : 
+                    </label>
+                    <input type="text" required autocomplete="off" name="firstname"/>
+                </div>
+        
+                <div class="field-wrap">
+                    <label>
+                        Last Name :
+                    </label>
+                    <input type="text"required autocomplete="off" name="lastname"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address :
+                    </label>
+                    <input type="email"required autocomplete="off"
+                    name="email"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Phone no. :
+                    </label>
+                    <input type="number"required autocomplete="off"
+                    name="phone"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Age :
+                    </label>
+                    <input type="number"required autocomplete="off"
+                    name="age"/>
+                </div>
+          
+                <div class="field-wrap">
+                    <label>
+                        Gender :
+                        <br>
+                    </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+          
+                <div class="field-wrap">
+                    <label>
+                        Set A Password :
+                    </label>
+                    <input type="password"required autocomplete="off"
+                    name="password"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Confirm Your Password :
+                    </label>
+                    <input type="password"required autocomplete="off"
+                    name="cpassword"/>
+                    <br><br>
+                    <button type="submit"/>Get Started</button>
+                </div>
+          
+          
+          
+          </form>
+
+        </div>
+</body>
+</html>
+
+
+
+
